@@ -1,0 +1,175 @@
+Question 1
+
+package day_3_assignments;
+
+public class question1 {
+
+	public static void main(String[] args) {
+		
+		int count = 5;
+		
+		System.out.println("Value of count: " + count);
+
+	}
+
+}
+
+Question 2
+
+package day_3_assignments;
+
+public class question2 {
+
+	public static void main(String[] args) {
+		
+		String message = "You got the message";
+		
+		System.out.println("Here is the message: " + message);
+
+	}
+
+}
+
+Question 3
+
+package day_3_assignments;
+
+public class question3 {
+
+	public static void main(String[] args) {
+		int num = 10;
+		double cost = 10000;
+		
+		System.out.println(num + ", " + cost);
+		
+
+	}
+
+}
+
+Question 4
+
+package day_3_assignments;
+
+public class Question4 {
+
+	public static void main(String[] args) {
+		String word = "Intention";
+		
+		System.out.println("Today's Word-of-the-Day is: " + word);
+
+	}
+
+}
+
+Question 5
+
+package day_3_assignments;
+
+public class Question4 {
+
+	public static void main(String[] args) {
+		int first=5, second=100;
+		
+		System.out.println("First is " + first + " second = " + second);
+
+	}
+
+}
+
+Question 6
+
+package day_3_assignments;
+
+public class Question4 {
+
+	public static void main(String[] args) {
+		String seatL, seat2, seat3, seat4, seatR, cs;
+		
+		seatL="Bob";
+		seat2="James";
+		seat3="Betty";
+		seat4="Herb";
+		seatR="Jill";
+		cs = ", ";
+		
+		System.out.println(seatL + cs + seat2 + cs + seat3 + cs + seat4 + cs + seatR);
+
+	}
+
+}
+
+Question 7
+
+package day_3_assignments;
+
+public class question3 {
+
+	public static void main(String[] args) {
+		int i = 10;
+		float f = 33.4f;
+		
+		System.out.println("i = " + i + " f = " + f);
+		
+
+	}
+
+}
+
+Question 8
+
+package day_3_assignments;
+
+public class question3 {
+
+	public static void main(String[] args) {
+		String lan1 = "C++";
+		String lan2 = "Java";
+		
+		System.out.println("I will learn \"" + lan1 + "\" and \"" + lan2 + "\" at Cybertek School.");
+		
+
+	}
+
+}
+
+Question 9
+
+package day_3_assignments;
+
+public class question3 {
+
+	public static void main(String[] args) {
+		byte steps = 100;
+		short miles = 5000;
+		int count = 1_000_000;
+		long population = 3434455667l;
+		
+		
+		System.out.println(steps + " " + miles + " " + count + " " + population);
+		
+
+	}
+
+}
+
+Question 10
+
+package day_3_assignments;
+
+public class question3 {
+
+	public static void main(String[] args) {
+		
+		byte hour = 10;
+		byte minute = 15;
+		byte second = 40;
+		String amorPm = "pm";
+		
+		
+		System.out.println(hour + ":" + minute + ":" + second + " " + amorPm);
+		
+
+	}
+
+}
