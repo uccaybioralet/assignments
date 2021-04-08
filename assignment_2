@@ -1,0 +1,116 @@
+Q1
+
+public static void main(String[] args) {
+		
+		int count=2;
+		
+		System.out.println(count);
+
+	}
+  
+Q2
+
+public static void main(String[] args) {
+		
+		String message="lost";
+		
+		System.out.println(message);
+
+	}
+  
+Q3
+
+public static void main(String[] args) {
+		
+		int num = 5;
+		double cost = 102.5;
+		
+		System.out.println(num + " first , then " + cost);
+
+	}
+
+Q4
+
+public static void main(String[] args) {
+		
+		String word = "why?";
+		
+		System.out.println("Today's Word-Of-The-Day is: " + word);
+
+	}
+  
+Q5
+
+public static void main(String[] args) {
+		
+		int first, second;
+		
+		first = 10;
+		second = 20;
+		
+		System.out.println("First is " + first + " second = " + second);
+
+	}
+  
+Q6
+
+public static void main(String[] args) {
+		
+		String fs = "Bob";
+		String ss = "Jill";
+		String ts = "Betty";
+		String fos = "Herb";
+		String fis = "James";
+		String c = ", ";
+		
+		System.out.println(fs + c + ss + c + ts + c + fos + c + fis);
+
+	}
+  
+  Q7
+  
+  public static void main(String[] args) {
+		
+		int i = 10;
+		float f = 20.5f;
+		
+		System.out.println("i=" + i + " , f=" + f);
+
+	}
+  
+  Q8
+  
+  public static void main(String[] args) {
+		
+		String f = "Java";
+		String s = "SQL";
+		
+		System.out.println("I will learn " + f + " and " + s + " at CybertekSchool");
+
+	}
+  
+  Q9
+  
+  public static void main(String[] args) {
+		
+		byte steps = 100;
+		short miles = 5000;
+		int count = 1_000_000;
+		long population = 3434455667l;
+
+	}
+  
+  Q10
+  
+  public static void main(String[] args) {
+		
+		int hour = 10;
+		int minute = 15;
+		int second = 00;
+		// String second = "00"; String could work for numbers starting with 0 
+		String amOrPm = "AM";
+		String d = ":";
+		
+		System.out.println(hour + d + minute + d + second + " " + amOrPm);
+
+	}
