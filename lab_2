@@ -1,0 +1,86 @@
+Question 1
+
+public static void main(String[] args) {
+		
+		int cont=1;
+		int sum=0;
+		Scanner input = new Scanner(System.in);
+		
+		while(cont==1) {
+			System.out.println("Enter your first number:");
+			sum+=input.nextInt();
+			System.out.println("Do you want to enter another number? 1-Yes, 0-No");
+			cont = input.nextInt();
+		}
+		System.out.println("Total of the numbers: " + sum);
+		
+	}
+
+}
+
+Question 2
+
+public static void main(String[] args) {
+		
+		int cookieCal=300/4;
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the number of cookies you ate:");
+		System.out.println("You consumed " + cookieCal*input.nextInt() + " cal");
+
+	}
+  
+Question 3
+
+public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter a positive integer number bigger than 0:");
+		int x = input.nextInt();
+		int sum = 0;
+		for(int i=1;i<=x;i++) {
+			sum+=i;
+		}
+		System.out.println("Total of the number up to " + x + " is " + sum);
+	}
+
+Question 4
+
+public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the number of male students:");
+		int male = input.nextInt();
+		System.out.println("Enter the number of female students:");
+		int female = input.nextInt();
+		System.out.println((100*(double)male/(male+female)) + "% of the class is male and " + 100*(double)female/(male+female) + "% of the class is female");
+	}
+  
+Question 5
+
+public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the cost of the meal:");
+		double meal = input.nextDouble();
+		System.out.println("Meal: " + meal + "\nTax: " + meal*0.0675 + "\nTip: " + meal*1.0675*0.2 + "\nTotal: " + meal*1.0675*1.2);
+
+	}
+  
+Question 6
+
+public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter the purchase price:");
+		double price=input.nextDouble();
+		
+		double stateTax = price*0.04;
+		double countyTax = price*0.02;
+		double totalTax = stateTax + countyTax;
+		double total = totalTax+price;
+		System.out.println("Purchase price: " + price);
+		System.out.println("State Tax: " + stateTax);
+		System.out.println("County Tax: " + countyTax);
+		System.out.println("  Total Tax: " + totalTax);
+		System.out.println("Tota: " + total);
+	}
