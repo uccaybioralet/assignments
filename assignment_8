@@ -31,3 +31,150 @@ public static void hello() {
 public static void world() {
 		System.out.print("World!");
 	}
+
+Question 4
+public static void printHollowRect() {
+		for(int i=0;i<5;i++) {
+			for(int j=0;j<5;j++) {
+				if(i==0 || i==4 || j==0 || j==4) {
+					System.out.print("*");
+				} else {
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+	}
+	
+Question 5
+public static void sign() {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter an intiger:");
+		int x = input.nextInt();
+		int result;
+		if(x<0) {
+			result = -1;
+		} else if (x>0) {
+			result = 1;
+		} else {
+			result = 0;
+		}
+		System.out.println(result);
+		
+	}
+
+Question 6
+public static void main(String[] args) {
+		
+		next3(6);
+		
+	}
+
+public static void next3(int x) {
+		System.out.print(++x + " ");
+		System.out.print(++x + " ");
+		System.out.print(++x + " ");
+	}
+
+Question 7
+public static void isPalindrome() {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter a positive intiger:");
+		int x = input.nextInt();
+		
+		int temp = x;
+		int reverse = 0;
+		
+		do {
+			reverse = reverse*10 + temp%10; 
+			temp/=10;
+		} while (temp>0);
+		
+		System.out.println(x==reverse);
+		
+	}
+	
+Question 8
+public static void fib() {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter a number:");
+		int x = input.nextInt();
+		
+		int n1 = 0;
+		int n2 = 1;
+		for (int i=1; i<x-1;i++) {
+			if(i%2==1) {
+				n1 = n1+n2;
+			} else {
+				n2 = n1+n2;
+			}
+		}
+		if(x==1 || n1>n2) {
+			System.out.println(n1);
+		}else {
+			System.out.println(n2);
+		}
+	}
+	
+Question 9
+public static int max(int x, int max) {
+		if(x>max) {
+			return max;
+		} else return x;
+		
+	}
+	
+Question 10
+public static boolean isEven(int x) {
+		return x%2==0;
+	}
+	
+Question 11
+public static String c_profits(int buyPrice, int sellPrice) {
+		if(buyPrice > sellPrice) {
+			return "loss";
+		} else if (buyPrice < sellPrice) {
+			return "profit";
+		} else return "no loss";
+	}
+	
+Question 12
+public static boolean hamletQuote(boolean x, boolean y) {
+		return x||y;
+	}
+	
+Question 13
+public static double waterTax(double x) {
+		if(x<=50) {
+			return x * 0.6;
+		} else if (x<=100) {
+			return x * 0.9;
+		} else if (x<=150) {
+			return x * 0.9 + 50;
+		} else return x * 0.9 + 100;
+		
+	}
+	
+Question 14
+public static boolean threeLocks(boolean a, boolean b, boolean c) {
+		return (a&&b)||c;
+	}
+	
+Question 15
+public static boolean validateTask(boolean a, int currentID, int taskID) {
+		
+		return (a && currentID+1==taskID);
+	}
+	
+Question 16
+public static boolean simpleRoomBook(boolean a, int d, int m, int y) {
+			if(((m==1 && d<7) || (m==8 && d>7) || m>8) && a && y==2018) {
+				return true;
+			} else return false;
+	}
+	
+Question 17
+public static boolean getThunderBlazz(boolean available, boolean gift, int ing1, int ing2, int ing3) {
+		
+		return (available || gift || (ing1==1&&ing2==2&&ing3==3) || (ing1==3&&ing2==1&&ing3==2));
+	}
