@@ -1,0 +1,153 @@
+Question 16
+public static void java(String x) {
+		System.out.println(x.indexOf("java")<2);
+}
+
+Question 17
+public static void letters() {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the first char:");
+		int a = input.next().charAt(0);
+		System.out.println("Enter the first char:");
+		int b = input.next().charAt(0);
+		
+		for (int i=a;i<=b;i++) {
+			System.out.print((char)i);
+		}
+	}
+
+Question 18
+public static void repeater() {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the word:");
+		String a = input.next();
+		System.out.println("Enter the separator:");
+		String b = input.next();
+		System.out.println("Enter the repetition number greater than 0:");
+		int c = input.nextInt();
+		
+		System.out.print(a);
+		for(int i=1;i<c;i++) {
+			System.out.print(b+a);
+		}
+		
+	}
+  
+Question 19
+public static int javaCount(String x) {
+		int i=0;
+		int counter = 0;
+		while(i<x.length()) {
+			if(x.indexOf("java", i)!=-1) {
+				counter++;
+				i=x.indexOf("java", i)+4;
+			} else {
+				return counter;
+			}
+		}
+		return counter;
+	}
+  
+Question 20
+public static void fac(int x) {
+		int result=1;
+		for (int i=1;i<=x;i++) {
+			result*=i;
+		}
+		System.out.println(result);
+	}
+  
+Question 21
+public static void prefixCount(String str, int n) {
+		String prefix = str.substring(0, n);
+		wordCount(prefix, str);
+		System.out.println(wordCount(prefix, str)!=1);
+		System.out.println(prefix + " appears " + wordCount(prefix, str) + " time(s)");
+	}
+public static int wordCount(String word, String x) {
+		int i=0;
+		int counter = 0;
+		while(i<x.length()) {
+			if(x.indexOf(word, i)!=-1) {
+				counter++;
+				i=x.indexOf(word, i)+word.length();
+			} else {
+				return counter;
+			}
+		}
+		return counter;
+	}
+  
+Question 22
+public static void tagFounder(String html) {
+		if(!html.contains("<html>")) {
+			System.out.println("Invalid input!");
+			return;
+		}
+		//html.indexOf("id=\""); location of ID
+		//html.indexOf("\"", html.indexOf("id=\"")+4); location of second "
+		System.out.println(html.substring(html.indexOf("id=\"")+4, html.indexOf("\"", html.indexOf("id=\"")+4)));
+	}
+  
+Question 23
+public static void sandwich(String food) {
+		if(food.indexOf("bread", food.indexOf("bread")+5)==-1) {
+			System.out.println("nothing");
+			return;
+		}
+		int l1 = food.indexOf("bread"); // location of first bread
+		int l2 = food.indexOf("bread", food.indexOf("bread")+5); // location of second bread
+		System.out.println(food.substring(l1+5, l2));
+	}
+  
+Question 24
+public static void javaVSpython(String x) {
+		
+		System.out.println(wordCount("java", x)==wordCount("python", x));
+	}
+  
+public static int wordCount(String word, String x) {
+		int i=0;
+		int counter = 0;
+		while(i<x.length()) {
+			if(x.indexOf(word, i)!=-1) {
+				counter++;
+				i=x.indexOf(word, i)+word.length();
+			} else {
+				return counter;
+			}
+		}
+		return counter;
+	}
+  
+Question 25
+public static String mergeString(String x, String y) {
+		String merged="";
+		int i=0;
+		while(i<x.length() || i<y.length()) {
+			if (i<x.length()) {
+				merged+=x.charAt(i);
+			}
+			if (i<y.length()) {
+				merged+=y.charAt(i);
+			}
+			i++;
+		}
+		return merged;
+	}
+  
+Question 26
+public static String uniqueChar(String x) {
+		
+		String unique="";
+		
+		for (int i=0;i<x.length();i++) {
+			if(!unique.contains(""+x.charAt(i))){
+				unique+=x.charAt(i);
+			}
+		}
+		
+		return unique;
+	}
+  
+Question 27
