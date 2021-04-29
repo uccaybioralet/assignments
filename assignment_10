@@ -151,3 +151,39 @@ public static String uniqueChar(String x) {
 	}
   
 Question 27
+public static String coverString(String x, String me) {
+		
+		return x.replace(me, "["+me+"]");
+	}
+	
+Question 28
+public static String badWord(String x, String bad) {
+		
+		return x.replace(" "+bad, "").replace(bad+" ", "").replace(bad, "");
+	}
+	
+Question 29
+public static String limit(String x, int i) {
+		
+		return x.substring(0, i);
+	}
+	
+Question 30
+public static String at3(String x, String y) {
+		
+		return x.substring(0, 3).concat(y).concat(x.substring(3));
+	}
+	
+Question 31
+public static boolean isPalindrome(String x) {
+		
+		x=x.replace(" ", "");
+		String reverse = "";
+		int j=x.length();
+		for(int i=j-1;i>=0;i--) {
+			reverse+=x.charAt(i);
+		}
+		
+		return reverse.equalsIgnoreCase(x);
+	}
+
